@@ -1,6 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="ar" dir="ltr" class="">
+
   <head>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+   <script type = "text/javascript">
+ 
+ var arabicFix = function(){
+ $('p,h1,h2,h3,h4,h5,li,ol,ul,strong,a,span,.brand--ui,.lesson-header__top-wrap,.page-header-container,.overview-sidebar__title,.fr-view').attr('dir','rtl').attr('align','right');
+ $('blocks-tabs__container').children().attr('dir','rtl').attr('align','right');
+ $('.block-flashcards-slider__progress-text').attr('dir','ltr').attr('align','center');
+ }
+ 
+ setInterval(arabicFix,500);
+</script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
